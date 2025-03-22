@@ -19,7 +19,7 @@ Logs:
 Respond in bullet points.
     """
 
-    response = openai.ChatCompletion.create(
+    response = openai.Client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful software engineering assistant."},
