@@ -22,7 +22,7 @@ Respond in bullet points.
     """
 
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini-2024-07-18",
         messages=[
             {"role": "system", "content": "You are a helpful software engineering assistant."},
             {"role": "user", "content": prompt}
