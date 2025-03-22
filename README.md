@@ -7,11 +7,11 @@ An AI-powered FastAPI backend that receives runtime logs from the Flutter-based 
 
 ## Features
 
-- ✅ Accepts log data via REST API
-- ✅ Integrates with OpenAI API for summarization
-- ✅ Returns developer-friendly insights
-- ✅ Easily deployable (e.g., on Render.com)
-- ✅ Works seamlessly with the LogSage Alarm App
+- Accepts log data via REST API
+- Integrates with OpenAI API for summarization
+- Returns developer-friendly insights
+- Easily deployable (e.g., on Render.com)
+- Works seamlessly with the LogSage Alarm App
 
 ---
 
