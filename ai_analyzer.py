@@ -3,7 +3,9 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
+client = openai.Client(api_key=openai.api_key)
 
 def analyze_logs(log_text: str) -> str:
     prompt = f"""
@@ -19,7 +21,7 @@ Logs:
 Respond in bullet points.
     """
 
-    response = openai.Client.chat.completions.create(
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful software engineering assistant."},
